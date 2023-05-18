@@ -37,7 +37,7 @@
         return;
       }
 
-      fetch(`http://www.omdbapi.com/?s=${busca}&apikey=${chave}&page=${paginaAtual}`)
+      fetch(`https://www.omdbapi.com/?s=${busca}&apikey=${chave}&page=${paginaAtual}`)
         .then(resultado => resultado.json())
         .then(json => {
           mostrarFilmes(json);
